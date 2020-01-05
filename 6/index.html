@@ -111,20 +111,30 @@
 
 				<div class="row">
 
-					<label for="">Imię <input type="text" name="imie" placeholder="Jak masz na imię?"></label>
-					<label for="">Hasło <input type="password" name="haslo"></label>
-					<label for="">Szukaj <input type="search" name="fraza"></label>
+					<label>Imię <input type="text" name="imie" placeholder="Jak masz na imię?"></label>
+					<label>Hasło <input type="password" name="haslo"></label>
+					<label>Szukaj <input type="search" name="fraza"></label>
 
 				</div>
 
 				<div class="row">
-					<label for="">ile kluczyków <input type="number" name="kluczyk" step="1 "></label>
+					<label>ile kluczyków <input type="number" name="kluczyk" step="1"></label>
+				</div>
+
+				<div class="row">
+					<label> Adres e-mail <input type="email" name="adres" required></label>
+					<label> Numer telefonu <input type="tel" name="telefon" required></label>
+				</div>
+
+				<div class="row">
+					<label> Data dostawy <input type="date" name="dzien"></label>
+					<label> Preferowany czas dostawy <input type="time" name="czas" step="1" min="09:00" max="18:00"></label>
 				</div>
 
 				<div class="row">
 					<input type="submit" value="Zamawiam!">
-					<input type="button" value="Zamawiam!">
-					<button type="button">Zamawiam!</button>
+					<!--<input type="button" value="Zamawiam!">
+					<button type="button">Zamawiam!</button>-->
 				</div>
 
 			</form>		
