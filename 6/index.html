@@ -32,7 +32,7 @@
 	
 		<article>
 		
-			<form action="order.php" method="post">
+			<form action="order.php" method="post" enctype="multipart/form-data">
 
 				<div class="row">
 
@@ -132,9 +132,44 @@
 				</div>
 
 				<div class="row">
+					<div><label for="komentarz"> Uwagi do zamówienia </label></div>
+					<textarea name="komentarz" id="komentarz" rows="4" cols="80" maxlength="25" minlength="10"></textarea>
+				</div>
+
+				<div class="row">
+					<label> Prześlij zdjęcie poprzedniego samochodu </label> <input type="file" name="obraz" accept="image/x-png,image/gif,image/jpeg">
+				</div>
+
+				<div class="row">
+					<label> Kolor lakieru <input type="color" name="kolor" value="#ff0000"></label>
+				</div>
+
+				<div class="row">
+					<label> Stopień realizacji zamówienia </label><progress id="realizacja" max="100" value="75"></progress>
+				</div>
+				
+				<div class="row">
+					<label> Stopień zatankowania samochodu </label><meter min="0" max="100" title="procent" value="30" low="30" high="70" optimum="75"></meter>
+				</div>
+				
+				<div class="row">
+					<label> Twoja strona www </label><input type="url" name="witryna">
+				</div>			
+
+				<input type="hidden" name="token" value="ug3f5jgh5f7d87874fdg4ddgh">
+				
+				<div class="row">
 					<input type="submit" value="Zamawiam!">
 					<!--<input type="button" value="Zamawiam!">
 					<button type="button">Zamawiam!</button>-->
+					<input type="reset" value="Wyczyść formularz">
+				</div>
+
+				<div class="row">
+					<input type="submit" value="Zamawiam!">
+					<!--<input type="button" value="Zamawiam!"> 
+					<button type="button">Zamawiam!</button>-->
+					<input type="reset" value="Wyczyść formularz">
 				</div>
 
 			</form>		
